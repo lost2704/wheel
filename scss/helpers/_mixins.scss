@@ -1,0 +1,16 @@
+@mixin before {
+  content:'';
+  display: block;
+  position: absolute;
+}
+
+@mixin mask($bg, $z){
+  position: absolute;
+  z-index: $z;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: $bg;
+
+}

@@ -1,0 +1,30 @@
+.global--loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  lost-flex-container: column;
+  justify-content: center;
+  align-items: center;
+  background: $body;
+  z-index: 51;
+
+  .line--wrapper {
+    opacity:0;
+    height: 2px;
+    width: 10.5rem;
+    z-index: 4;
+    background: lighten($body, 7);
+    position: relative;
+    .line {
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      top: 0;
+      background: lighten($body, 67);
+      z-index: 5;
+    }
+  }
+}

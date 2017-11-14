@@ -1,0 +1,108 @@
+// Reset some basic elements
+
+*, body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  // -webkit-touch-callout: none;
+  // overflow:scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+html {
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font: $base-font-weight #{$small-font-size}/#{$base-line-height} $font-family;
+  background: $body;
+  color: $white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  height: 100%;
+  width: 100%;
+  @include tablet {
+    font-size: $medium-font-size;
+  }
+
+  @include laptop {
+    font-size: $medium-font-size;
+  }
+
+  @include desktop {
+    font-size: $base-font-size;
+  }
+}
+
+
+// Heading vertical rhytme
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $base-unit / 2;
+}
+
+figure,
+figure > img {
+  display: block;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display:block;
+  vertical-align: middle;
+}
+
+ul, ol, li, ul li {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color:$white;
+  outline:none;
+  text-decoration: none;
+}
+
+
+h1 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+
+h4 {
+  color:$white;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

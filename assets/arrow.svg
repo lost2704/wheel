@@ -1,0 +1,57 @@
+<!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="67.586548"
+   width="13.334197"
+   version="1.1"
+   id="svg4286"
+   viewBox="0 0 13.334197 67.586548"
+   y="0px"
+   x="0px">
+  <defs
+     id="defs4310" />
+  <metadata
+     id="metadata4288">image/svg+xml<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="translate(15.009614,-10.616143)"
+     id="g4290">
+    <title
+       id="title4292">background</title>
+    <rect
+       style="fill:none"
+       id="rect4294"
+       x="-1"
+       y="-1"
+       width="582"
+       height="402" />
+  </g>
+  <g
+     style="fill:#ffffff;stroke:none"
+     transform="translate(-35.332902,-5.70115)"
+     id="g4296">
+    <title
+       id="title4298">Layer 1</title>
+    <g
+       style="fill:#ffffff;stroke:none"
+       id="g4300">
+      <path
+         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.87199998;stroke-miterlimit:4"
+         id="path4302"
+         d="m 42,73.287697 6.667099,-13.334637 -5.03194,0 0,-54.25191 -3.270317,0 0,54.25191 -5.03194,0 6.667099,13.334637 z"
+         stroke-miterlimit="4" />
+    </g>
+  </g>
+</svg>

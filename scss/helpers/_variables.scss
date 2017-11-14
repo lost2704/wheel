@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// Basic color set
+$white: white;
+$black: black;
+
+$light-gray: #BBB;
+$medium-gray: darken($light-gray, 20);
+$dark-gray: darken($medium-gray, 34);
+$base-color: $white;
+
+
+$body:#0A0A0A;
+$body:#19191B;
+
+$link:#2B1174;
+
+
+// Basic settings ( font, margin, padding...)
+$helvetica-font-family: 'Verdana', 'Arial', 'sans-serif';
+$font-family: 'Lato', $helvetica-font-family;
+$base-font-size: 1em;
+$medium-font-size: .875em;
+$small-font-size: .75em;
+
+$base-font-weight: 100;
+$semi-font-weight: 300;
+$medium-font-weight: 400;
+$bold-font-weight: 600;
+
+$base-line-height: 1.5;
+$content-width: 93em;
+$background-color: $dark-gray;
+
+$base-unit: 1em;

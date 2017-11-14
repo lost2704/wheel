@@ -1,0 +1,142 @@
+$cubic-bezier: cubic-bezier(.17,.67,.1,.9);
+
+.global--wrapper {
+  height: 100vh;
+  width: 100%;
+
+}
+
+
+.page--container {
+  position: relative;
+  z-index: 50;
+  height: 100vh;
+}
+
+svg {
+  // display: inline !important;
+  height: 1rem;
+}
+
+
+.arrow {
+  position: fixed;
+  z-index: 6000;
+  right: 6rem;
+  bottom:5rem;
+  svg {
+    height: 1.25rem;
+  }
+}
+
+.close {
+  position: fixed;
+  z-index: 60000000;
+  right: 6rem;
+  top:5rem;
+  display: none;
+  opacity:0;
+  will-change:opacity;
+  transition: opacity .3s $cubic-bezier;
+  cursor:pointer;
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+  // pointer-events: none;
+  &.is--active {
+    opacity:1;
+    pointer-events: auto;
+  }
+}
+
+.scroll--reveal{
+  opacity:0;
+}
+
+.scroll--reveal.is--revealed {
+    opacity:1;
+}
+
+
+.fullwidth {
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  position: absolute;
+  top:-999rem;
+  left:-909rem;
+  lost-flex-container: column;
+  justify-content: center;
+  .wrapper {
+    width: 77%;
+    margin: 0 auto;
+    opacity:1 !important;
+    .text--wrapper {
+      display: block;
+      .name--site {
+        text-transform: uppercase;
+        letter-spacing: -.5rem;
+        font-weight: 400;
+        display: inline-block;
+        margin-right: .5rem;
+      }
+    }
+
+    .page--title {
+      font-size: .65rem;
+      display: inline-block;
+      letter-spacing: .15rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .feature--projects {
+      margin-top: 4rem;
+      li {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        &:last-child {
+          margin: 0;
+        }
+        // line-height: 2;
+        a {
+          font-weight: 300;
+          display: inline-block;
+          color:$white !important;
+        }
+      }
+    }
+
+    ul.social {
+      margin-top: 4rem;
+    }
+  }
+}
+
+
+
+section {
+  height: 100vh;
+  z-index: 4;
+  &.intro {
+    // display: none !important;
+    background: lighten($body,3);
+  }
+  &.projects{
+    // display: none !important;
+    background: lighten($body,1);
+  }
+  &.contact{
+    background: darken($body,1);
+  }
+  &.is--active {
+    top:0;
+    z-index: 50;
+    left:0;
+  }
+  &.projects svg {
+    width: 1rem;
+    margin-right: 1rem;
+  }
+}

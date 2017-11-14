@@ -1,0 +1,39 @@
+a {
+  position: relative;
+}
+span.bg {
+   background: $white;
+   position: absolute;
+   bottom:0;
+   left:0;
+   will-change: right;
+   transform: translateY(1px);
+   transition: right .3s cubic-bezier(.1,.86,.07,.95);
+   right:100%;
+   height: 1px;
+   &.leave {
+     will-change: left, width;
+     transition: left .3s cubic-bezier(.1,.86,.07,.95), width .3s cubic-bezier(.1,.86,.07,.95);
+     left:100%;
+     width: 0;
+   }
+   &.enter {
+     width: 100%;
+     transition: width .3s cubic-bezier(.1,.86,.07,.95);
+   }
+   &.enter + span.label {
+     color: $white;
+   }
+
+   &.leave + span.label {
+     color: lighten($body,30);
+    //  color:$white;
+   }
+}
+
+span.label {
+    position: relative;
+    will-change: color;
+    transition: color .3s cubic-bezier(.1,.86,.07,.95);
+    z-index: 6;
+}
